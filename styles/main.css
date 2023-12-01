@@ -1,0 +1,73 @@
+/*Typography
+--------------------------------------------------------------*/
+body,
+html {
+    margin: 0;
+    font-family: "Comfortaa", Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+button,
+input,
+select,
+textarea {
+    font-family: "Comfortaa", Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Patua One", serif;
+    letter-spacing: 2px;
+}
+
+h1 {
+    width: 100%;
+    padding: 15px;
+    margin: 0;
+    background-color: #e0a057;
+}
+
+.details {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.detail--column {
+    flex-basis: 24%;
+    margin: 0 2rem;
+    padding: 1.5rem;
+    border: 3px dotted #e0a057;
+    border-radius: 10px;
+}
+
+.bookings {
+    font-size: 1rem;
+    padding: 1rem 8rem;
+}
+
+.booking__card {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.booking__card p {
+    width: 40%;
+    background-color: #cd8080;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.booking__card p:hover {
+    /* color toright tobottom blur */
+    box-shadow: #e0a057 10px 10px 15px;
+}

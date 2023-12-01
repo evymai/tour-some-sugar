@@ -1,0 +1,32 @@
+title Tour Some Sugar
+
+actor User
+note over User: click on venue
+User<--Venues: display bands that booked venu
+note over User: click on band
+User<--Band: display venues that band plays
+note over User: click on booking
+User<--Bookings: display band and band information
+
+Main->Bookings:BookingsHTML()
+loop 
+Bookings->Database:getBookings()
+Bookings<--Database: return all bookings
+end
+Main<--Bookings:display bookings html
+
+Main->Venues:VenuesHTML()
+loop 
+Venues->Database:getVenues()
+Venues<--Database: return all venues
+end
+Main<--Venues:display venues html
+
+Main->Bands:BandsHTML()
+loop 
+Bands->Database:getBands()
+Bands<--Database: return all bands
+end
+Main<--Bands:display bands html
+
+
