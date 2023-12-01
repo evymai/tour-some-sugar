@@ -4,6 +4,7 @@ const bands = getBands()
 
 
 
+
 export const BandsHTML = () => {
     let html = "<ul>"
 

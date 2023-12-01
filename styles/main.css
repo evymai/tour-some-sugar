@@ -61,7 +61,9 @@ h1 {
 }
 
 .booking__card p {
-    width: 40%;
+    text-align: center;
+    width: 25%;
+    height: 60px;
     background-color: #cd8080;
     border-radius: 10px;
     padding: 10px;
